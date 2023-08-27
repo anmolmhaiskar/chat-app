@@ -1,0 +1,50 @@
+<div class="container">
+
+    <div class="pt-3">
+        <h4 class="flex justify-between mt-3 text-center">
+            <i class="bi bi-menu-button-wide-fill white-color bg-theme px-4 py-3 rounded-circle" style="font-size: 8vh"></i>
+            <p class="text-center pt-3 font-weight-bold" style="font-size: 3vh">Say Something</p> 
+        </h4>
+    </div>
+
+    <div class="container m-4">
+        <div class="row">
+            <div class="col-9 card-group">
+                <div class="card box-shadow">
+                    <div class="p-1 text-center white-color bg-theme rounded"><h3>Room Name</h3></div>
+                    <div class="card-body p-1">
+                        <%# chats %>
+                        <div class="" style="height:50vh; overflow-y:auto;">
+                            <%= render @messages%>
+                        </div>
+                    </div>
+                        <%# message input box %>
+                    <div class="card-footer rounded p-0">
+                        <div class="input-group text-center" style="height:7vh;">
+                            <textarea class="form-control" rows="1" placeholder="Enter Message" required></textarea>
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-outline-info bg-hover-theme"><span class="bi bi-send-fill"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%# sidebar menu %>
+            <div class="col-2 mx-3 card bg-dark p-0 border-0 box-shadow">
+                <div class="list-group list-group-flush">
+                    <div class="align-middle text-center white-color border-bottom border-white">
+                        <h3>Menu</h3>
+                    </div>
+                    <div>
+                        <a href="#" class="list-group-item list-group-item-action ripple bg-dark white-color">Rooms</a>
+                        <a href="#" class="list-group-item list-group-item-action ripple bg-dark white-color">Users</a>
+                        <a href="#" class="list-group-item list-group-item-action ripple bg-dark white-color">Create Room</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

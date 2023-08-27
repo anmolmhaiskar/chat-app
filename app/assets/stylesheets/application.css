@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+ .white-color{
+    color: white;
+ }
+
+ 
+ .bg-theme{
+    background-color: #05aafc;
+ }
+
+ .bg-gray {
+  background-color: whitesmoke;
+ }
+
+.box-shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.theme-color, .list-group-item:hover, #navbarDropdown:hover, #messages:hover, #chatroom:hover{
+  color: #05aafc;
+}
+
+.bg-hover-theme:hover {
+  background-color: #05aafc;
+  color: white;
+}
+
+textarea {
+  resize: none;
+}
